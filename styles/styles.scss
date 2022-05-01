@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import '/styles/buttons/button.scss';
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import "node_modules/@fortawesome/fontawesome-free/css/all";
 
 @import "styles/globals.scss";
 @import "styles/typography.scss";
+
+@import '/styles/layout/header.scss';
+@import '/styles/buttons/button.scss';

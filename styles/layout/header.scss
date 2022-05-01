@@ -1,0 +1,32 @@
+header {
+    padding: 40px 0;
+    @apply col-span-12 flex;
+    .logo {
+
+    }
+
+    nav {
+        margin-left:auto;
+        ul {
+            display: flex;
+
+            li {
+                color: white;
+                margin-right:20px;
+                font-size: 24px;
+
+                &.active {
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        height: 3px;
+                        background: #5D21D1;
+                        width: 100%;
+                        bottom: -6px;
+                    }
+                }
+            }
+        }
+    }
+}
