@@ -3,7 +3,10 @@ import Link from 'next/link'
 export default function Card({children}){
     return <Link href={'/'}>
         <a href={''} className={'block'}>
-            <div className={'card card--purple'}>{children}</div>
+            <div className={'card card--purple'}>
+                {children}
+                <span className={'btn btn--secondary'}>Show project</span>
+            </div>
         </a>
     </Link>
 }
