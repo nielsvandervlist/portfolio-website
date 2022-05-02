@@ -1,0 +1,20 @@
+.work {
+    &__title {
+        display: flex;
+        align-items: center;
+
+        i{
+            margin-right: 20px;
+        }
+
+        img {
+            margin-left: 40px;
+        }
+    }
+
+    &__cards {
+        .swiper {
+            overflow: visible;
+        }
+    }
+}
