@@ -6,7 +6,7 @@ export default function Header({}){
         <nav className={'ml-auto'}>
             <ul>
                 <li className={'active'}><Link href={'/'}>home</Link></li>
-                <li><Link href={'/'}>work</Link></li>
+                <li><Link href={'/work'}>work</Link></li>
                 <li><Link href={'/'}>about</Link></li>
                 <li><Link href={'/'}>contact</Link></li>
             </ul>

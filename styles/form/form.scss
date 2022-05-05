@@ -1,0 +1,25 @@
+.contact {
+    &__form {
+        .form {
+            &__field {
+                label {
+                    color: white;
+                    font-size: 15px;
+                    margin-bottom: 7px;
+                    display: block;
+                }
+                input[type='text'], input[type='email'], textarea {
+                    border-radius: 4px;
+                    padding: 12px 10px;
+                    width: 100%;
+                    background: transparent;
+                    border: 1px solid gray;
+                    color: white;
+                }
+                textarea {
+                    height: 165px;
+                }
+            }
+        }
+    }
+}
