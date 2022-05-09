@@ -12,8 +12,8 @@ export default function Header({}){
             <ul>
                 <li className={`${path === '/' ? 'active' : ''}`}><Link href={'/'}>home</Link></li>
                 <li className={`${path === '/work' ? 'active' : ''}`}><Link href={'/work'}>work</Link></li>
-                <li className={`${path === '/about' ? 'active' : ''}`}><Link href={'/'}>about</Link></li>
-                <li className={`${path === '/contact' ? 'active' : ''}`}><Link href={'/'}>contact</Link></li>
+                <li className={`${path === '/about' ? 'active' : ''}`}><Link href={'/about'}>about</Link></li>
+                <li className={`${path === '/contact' ? 'active' : ''}`}><Link href={'/contact'}>contact</Link></li>
             </ul>
         </nav>
     </header>
