@@ -1,0 +1,24 @@
+.mySwiper {
+    .swiper-button-next {
+        &:after {
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            content: '\f0a9';
+            color: #FE7624;
+            background: white;
+            border-radius: 50%;
+            font-size: 60px;
+        }
+    }
+    .swiper-button-prev {
+        &:after{
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            content: '\f0a8';
+            color: #FE7624;
+            background: white;
+            border-radius: 50%;
+            font-size: 60px;
+        }
+    }
+}

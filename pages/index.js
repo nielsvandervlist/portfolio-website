@@ -10,20 +10,20 @@ function Home() {
     return (
         <Layout>
             <div className={'home col-span-12'}>
-                <div className={'hero grid grid-cols-12 my-20'}>
-                    <div className={'hero__text col-span-5'}>
+                <div className={'hero grid grid-cols-12 my-8 lg:my-20'}>
+                    <div className={'hero__text col-span-12 lg:col-span-5'}>
                         <h1>Hello, my name is <span>Niels.</span></h1>
                         <h2>I’m a developer and webdesigner</h2>
                         <Button className={'btn btn--primary'} link={'/'}>Show work</Button>
                     </div>
-                    <div className={'hero__image col-span-6 ml-auto'}>
+                    <div className={'hero__image col-span-12 lg:col-span-6 ml-auto'}>
                         <Figure img={'hero.png'}/>
                     </div>
                 </div>
                 <div className={'work my-20'}>
                     <div className={'work__title'}>
                         <i className="fa-solid fa-briefcase"/>
-                        <h2>Take a look at some of my work</h2>
+                        <h2 className={'mb-8 lg:mb-0'}>Take a look at some of my work</h2>
                         <Figure img={'cat.png'}/>
                     </div>
                     <div className={'work__cards'}>
@@ -31,7 +31,7 @@ function Home() {
                     </div>
                 </div>
                 <div className={'about my-20 grid grid-cols-12'}>
-                    <div className={'about__text text-center col-span-8 col-start-3'}>
+                    <div className={'about__text text-center col-span-12 lg:col-span-8 lg:col-start-3'}>
                         <h2 className={'mb-8'}>What do i do?</h2>
                         <Figure className={'mb-8'} img={'faq.png'}/>
                         <h2 className={'mb-8'}>I’m a full-time <span>designer</span> and <span>wedeveloper</span>.</h2>
@@ -40,7 +40,7 @@ function Home() {
                             other developers</p>
                         <Figure className={'mb-8'} img={'roadmap.png'}/>
                     </div>
-                    <div className={'about__software col-span-8 col-start-3 text-center'}>
+                    <div className={'about__software col-span-12 lg:col-span-8 lg:col-start-3 text-center'}>
                         <div className={'about__icons'}>
                             <i className="fa-brands fa-react"/>
                             <i className="fa-brands fa-laravel"/>
@@ -55,8 +55,8 @@ function Home() {
                         <p>I create websites, applications and API’s</p>
                     </div>
                 </div>
-                <div className={'contact my-20 grid grid-cols-12 flex items-center'}>
-                    <div className={'contact__form col-span-5'}>
+                <div className={'contact my-8 col-span-12 lg:my-20 grid grid-cols-12 flex items-center'}>
+                    <div className={'contact__form col-span-12 lg:col-span-5'}>
                         <h2 className={'mb-8'}>Get in touch <i className="fa-solid fa-paper-plane ml-4"/></h2>
                         <p className={'mb-16'}>I’m free for any conversations whatsoever.</p>
                         <form action={'../../php/mail.php'} className={'form'} method={'post'}>
@@ -79,7 +79,7 @@ function Home() {
                             <button type={'submit'} className={'btn btn--primary'}>Send email</button>
                         </form>
                     </div>
-                    <div className={'contact__image col-span-7 flex'}>
+                    <div className={'contact__image col-span-12 lg:col-span-7 flex'}>
                         <Figure className={'ml-auto'} img={'contact.png'}/>
                     </div>
                 </div>

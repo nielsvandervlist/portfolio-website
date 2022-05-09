@@ -14,19 +14,33 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 48px;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
 }
 
 h2 {
     font-size: 36px;
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
     font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 p {
     color: white;
     font-size: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+
     span{
         color: #FE7624;
     }
