@@ -4,11 +4,21 @@
         align-items: center;
 
         i {
+            transition: 0.3s all ease-in-out;
+            transform: scale(1);
             margin-right: 20px;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
 
         img {
             margin-left: 40px;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                margin-left: 100px;
+            }
         }
 
         @media (max-width: 1024px) {

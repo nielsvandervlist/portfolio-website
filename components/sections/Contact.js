@@ -41,7 +41,7 @@ export default function Contact({}) {
                         />
                     </div>
                     <div className={'form__field'}>
-                        <label htmlFor={'email'}>First name</label>
+                        <label htmlFor={'email'}>Email</label>
                         <input
                             onChange={(e) => setForm({...form, email: e.target.value})}
                             type={'email'}
@@ -52,7 +52,7 @@ export default function Contact({}) {
                 </fieldset>
                 <fieldset className={'mb-10'}>
                     <div className={'form__field mr-8'}>
-                        <label htmlFor={'message'}>First name</label>
+                        <label htmlFor={'message'}>Message</label>
                         <textarea
                             value={form.message || ''}
                             placeholder={'Write your message here'}

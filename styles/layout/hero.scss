@@ -3,7 +3,16 @@
     align-items: center;
     &__text {
         h1 {
+            span{
+                transition: 0.1s all ease-in-out;
+                transform: skewX(0) scale(1) translateX(0);
+                display: inline-block;
+                cursor: grab;
 
+                &:hover{
+                    transform: skew(-15deg) scale(1.1) translateX(20px);
+                }
+            }
         }
 
         h2 {
@@ -13,6 +22,10 @@
     }
 
     &__image {
-
+        transform: rotateY(0);
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            transform: rotateY(-180deg);
+        }
     }
 }

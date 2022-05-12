@@ -2,7 +2,20 @@ header {
     padding: 40px 0;
     @apply col-span-12 flex;
     .logo {
+        transition: 0.75s all ease-in-out;
+        transform: rotate(0deg);
 
+        i{
+            transition: 0.75s all ease-in-out;
+            color: #FE7624;
+        }
+
+        &:hover {
+            transform: rotate(360deg);
+            i{
+                color: yellow;
+            }
+        }
     }
 
     nav {
@@ -14,9 +27,26 @@ header {
                 color: white;
                 margin-right:20px;
                 font-size: 24px;
+                position: relative;
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    background: #5D21D1;
+                    left: 0;
+                    right: 100%;
+                    bottom: -6px;
+                    transition: 0.3s all ease-in-out;
+                }
+
+                &:hover {
+                    &:before{
+                        right: 0%;
+                    }
+                }
 
                 &.active {
-                    position: relative;
                     &:before{
                         content: '';
                         position: absolute;

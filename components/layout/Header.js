@@ -7,7 +7,7 @@ export default function Header({}){
     const path = Router.pathname
 
     return <header>
-        <Link href={'/'}><a><i className="fa-solid fa-bolt"/></a></Link>
+        <Link href={'/'}><a className={'logo'}><i className="fa-solid fa-bolt"/></a></Link>
         <nav className={'ml-auto'}>
             <ul>
                 <li className={`${path === '/' ? 'active' : ''}`}><Link href={'/'}>home</Link></li>
