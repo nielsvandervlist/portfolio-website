@@ -14,6 +14,17 @@
         }
     }
 
+    &--black {
+        border: 3px solid black;
+        color: white;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+
     &--secondary {
         background: #FE7624;
     }
